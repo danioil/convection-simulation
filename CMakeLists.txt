@@ -13,6 +13,6 @@ FetchContent_Declare(SFML
     SYSTEM)
 FetchContent_MakeAvailable(SFML)
 
-add_executable(convection src/main.cpp)
+add_executable(convection src/main.cpp "src/Vec2.h" src/Vec2.cpp)
 target_compile_features(convection PRIVATE cxx_std_17)
 target_link_libraries(convection PRIVATE SFML::Graphics)
